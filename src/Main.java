@@ -96,12 +96,27 @@ public class Main {
         int lossWeightDaysMaxGrams = (lossWeightKg * oneKgToGrams) / lossWeightOneDayMaxGrams;
         System.out.println(lossWeightDaysMinGrams + " дней уйдёт на похудение, если спортсмен будет терять каждый день по 250 грамм");
         System.out.println(lossWeightDaysMaxGrams + " дней уйдёт на похудение, если спортсмен будет терять каждый день по 500 грамм");
-        double lossWeightOneDayMedium = (lossWeightOneDayMinGrams + lossWeightOneDayMaxGrams) / 2;
-        double lossWeightDaysMediumGrams = (lossWeightKg * oneKgToGrams) / lossWeightOneDayMedium;
-        System.out.println("потребуется " + lossWeightDaysMediumGrams + " дней в среднем, чтобы добиться результата похудения");
+        int lossWeightDaysMedium = (lossWeightDaysMinGrams + lossWeightDaysMaxGrams) / 2;
+        System.out.println("Потребуется " + lossWeightDaysMedium + " дней в среднем, чтобы добиться результата похудения");
 
         //Задача 8
         System.out.println("Задача 8");
+        int mashaSalary = 67760;
+        int denisSalary = 83690;
+        int kristinaSalary = 76230;
+        float percent = 10;
+        float salaryMultiplier = percent / 100;
+        float newMashaSalary = mashaSalary + (mashaSalary * salaryMultiplier);
+        float newDenisSalary = denisSalary + (denisSalary * salaryMultiplier);
+        float newKristinaSalary = kristinaSalary + (kristinaSalary * salaryMultiplier);
+        float yearMashaSalary = (newMashaSalary - mashaSalary) * 12;
+        float yearDenisSalary = (newDenisSalary - denisSalary) * 12;
+        float yearKristinaSalary = (newKristinaSalary - kristinaSalary) * 12;
+        System.out.println("Маша теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на " + yearMashaSalary + " рублей");
+        System.out.println("Денис теперь получает " + newDenisSalary + " рублей. Годовой доход вырос на " + yearDenisSalary + " рублей");
+        System.out.println("Маша теперь получает " + newKristinaSalary + " рублей. Годовой доход вырос на " + yearKristinaSalary + " рублей");
+
+
 
 
 
